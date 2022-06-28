@@ -1,0 +1,22 @@
+doctype html 
+html 
+    head 
+        include /components/css.pug
+    body 
+        .ticket 
+            .holes-top
+            if (banner)
+                .banner
+                    img(src=banner)
+            .title 
+                p.greeting=`Hi, ${name}!`
+                p.campaign-name=campaignName
+            .holes-lower
+            .coupon#js-container
+                .code-container(style={visibility: 'hidden'})
+                    code='SKbdD8yg2b'
+                canvas#js-canvas.scratch-area
+               
+
+        include /components/js.pug
+        
