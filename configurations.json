@@ -1,5 +1,6 @@
 {
     "name": "Taeri",
     "campaignName": "Scratch & Win",
-    "banner": "https://images.unsplash.com/photo-1606406054219-619c4c2e2100?ixlib=rb-1.2.1&dl=bach-tran-s4vdHcJf_m0-unsplash.jpg&w=640&q=80&fm=jpg&crop=entropy&cs=tinysrgb"
+    "banner": "https://images.unsplash.com/photo-1606406054219-619c4c2e2100?ixlib=rb-1.2.1&dl=bach-tran-s4vdHcJf_m0-unsplash.jpg&w=640&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+    "claimButton": "Claim"
 }

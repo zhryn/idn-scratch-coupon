@@ -72,6 +72,8 @@ script(type='text/javascript').
         console.log(filledInPixels + '%');
         if (filledInPixels > 80) {
             canvas.parentNode.removeChild(canvas);
+
+            document.querySelectorAll('#btn')[0].style.visibility = 'visible';
         }
     }
     

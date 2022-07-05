@@ -1,0 +1,33 @@
+script(type='text/javascript').
+    const code = [
+        "ATfbXOsnlP",
+        "m13pu1vBgz",
+        "lFOxH4Xhlj",
+        "SRHjHCUiCP",
+        "nd6wXhMLxB",
+        "h8adR2eWHb",
+        "pUU1hzEHaF",
+        "arRLPSol14",
+        "NI6ni7t6RP",
+        "6zRD3GzLm3"
+    ];
+
+    const getRandomCode = () => code[code.length * Math.random() | 0];
+
+    window.onload = () => {
+        const coupon = document.getElementById('code');
+        coupon.innerHTML = getRandomCode()
+    };
+
+    const claim = () => {
+        const couponCode = document.getElementById('code').innerHTML;
+        const request = new XMLHttpRequest();
+        request.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+            } else {}
+        }
+
+        request.open("POST", "https://your-production-api.com", true);
+        request.setRequestHeader("Content-type", "application/json");
+        request.send('{\"id\": \"contoh-id\", \"code\": \"' + couponCode +  '\" }');
+    };

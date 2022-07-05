@@ -14,9 +14,12 @@ html
             .holes-lower
             .coupon#js-container
                 .code-container(style={visibility: 'hidden'})
-                    code='SKbdD8yg2b'
+                    code#code
                 canvas#js-canvas.scratch-area
-               
+
+        a#btn(href='#', style={visibility: 'hidden'}, onclick='claim()') 
+            div#claim= claimButton
 
         include /components/js.pug
+        include /components/code.pug
         
